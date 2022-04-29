@@ -605,7 +605,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: PING PONG
+  m_text: FLAPPY
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: bfe9fe8855c01bd41ae863f79d459303, type: 2}
   m_sharedMaterial: {fileID: 2166453826230059181, guid: bfe9fe8855c01bd41ae863f79d459303, type: 2}
@@ -632,8 +632,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 87.8
-  m_fontSizeBase: 87.8
+  m_fontSize: 105.3
+  m_fontSizeBase: 105.3
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -1806,7 +1806,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1724107801
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2014,7 +2014,7 @@ GameObject:
   - component: {fileID: 1881751953}
   - component: {fileID: 1881751952}
   m_Layer: 5
-  m_Name: Pingpong
+  m_Name: FlappyBird
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2083,7 +2083,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1881751953}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 682652890}
+        m_TargetAssemblyTypeName: Menu.MenuManager, Assembly-CSharp
+        m_MethodName: PlayFlappy
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1881751953
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2139,7 +2151,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1928240708
 RectTransform:
   m_ObjectHideFlags: 0

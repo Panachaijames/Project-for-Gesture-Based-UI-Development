@@ -26,5 +26,10 @@ namespace Menu
         {
             SceneManager.LoadScene("HockeyMenu");
         }
+
+        public void PlayFlappy()
+        {
+            SceneManager.LoadScene("FlappyBirdMenu");
+        }
     }
 }

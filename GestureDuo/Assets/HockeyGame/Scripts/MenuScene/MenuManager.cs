@@ -25,7 +25,10 @@ namespace Hockey
         {
             SceneManager.LoadScene("HockeyGamePlay");
         }
-
+        public void QuitGame()
+        {
+            SceneManager.LoadScene("Menu");
+        }
         public void SetMultiplayer(bool isOn)
         {
             GameValues.IsMultiplayer = isOn;
