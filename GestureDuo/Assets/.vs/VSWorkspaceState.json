@@ -1,0 +1,13 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\FlappyBirdGame",
+    "\\FlappyBirdGame\\Script",
+    "\\HockeyGame\\Scripts",
+    "\\HockeyGame\\Scripts\\MainScene",
+    "\\Maze",
+    "\\Maze\\Script"
+  ],
+  "SelectedNode": "\\FlappyBirdGame\\Script\\GameManager.cs",
+  "PreviewInSolutionExplorer": false
+}
