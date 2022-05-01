@@ -27,11 +27,15 @@ namespace MazeTilt
 
         public void Level2()
         {
-            //TODO: do & link to scene level2
+            SceneManager.LoadScene("MazeLevel2");
         }
         public void Level3()
         {
-            //TODO: do & link to scene level3
+            SceneManager.LoadScene("MazeLevel3");
+        }
+        public void Level4()
+        {
+            SceneManager.LoadScene("MazeLevel4");
         }
 
         public void Back()

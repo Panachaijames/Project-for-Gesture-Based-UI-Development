@@ -24,8 +24,8 @@ namespace MazeTilt
 
         public void NextLevel()
         {
+            SceneManager.LoadScene("MazeLevel2");
             Time.timeScale = 1;
-            //TODO: do next level
         }
 
         public void MainMenu()

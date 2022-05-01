@@ -720,7 +720,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameManager: {fileID: 1620129687}
-  velocity: 3
+  velocity: 2
 --- !u!50 &1381655459
 Rigidbody2D:
   serializedVersion: 4

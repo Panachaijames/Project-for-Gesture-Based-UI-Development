@@ -11,7 +11,7 @@ namespace MazeTilt
         float diry;
         float moveSpeed = 20f;
         public GameManager gameManager;
-
+        
         void Start()
         {
             rb = GetComponent<Rigidbody2D>();
@@ -22,8 +22,7 @@ namespace MazeTilt
             dirx = Input.acceleration.x * moveSpeed;
             diry = Input.acceleration.y * moveSpeed;
             transform.position = new Vector2(transform.position.x,transform.position.y);
-            
-
+           
         }
 
         void FixedUpdate()

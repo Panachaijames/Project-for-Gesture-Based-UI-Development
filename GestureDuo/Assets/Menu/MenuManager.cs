@@ -31,5 +31,9 @@ namespace Menu
         {
             SceneManager.LoadScene("FlappyBirdMenu");
         }
+        public void PlayMaze()
+        {
+            SceneManager.LoadScene("MazeMenu");
+        }
     }
 }
