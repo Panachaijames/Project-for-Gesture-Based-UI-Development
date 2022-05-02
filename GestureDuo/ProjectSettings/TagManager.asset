@@ -7,6 +7,7 @@ TagManager:
   - AiGoal
   - PlayerGoal
   - WinPoint
+  - EnemyCar
   layers:
   - Default
   - TransparentFX
