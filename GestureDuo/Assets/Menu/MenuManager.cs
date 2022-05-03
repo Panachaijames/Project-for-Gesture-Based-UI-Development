@@ -35,5 +35,9 @@ namespace Menu
         {
             SceneManager.LoadScene("MazeMenu");
         }
+        public void PlayAm()
+        {
+            SceneManager.LoadScene("RacingMenu");
+        }
     }
 }

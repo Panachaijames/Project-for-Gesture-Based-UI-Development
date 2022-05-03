@@ -35,4 +35,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/MazeMenu.unity
     guid: 8a78d5b330a5d924ebb57de385ded6d0
+  - enabled: 1
+    path: Assets/Scenes/RacingMenu.unity
+    guid: 310bd791480a69e498c822163ad3393e
+  - enabled: 1
+    path: Assets/Scenes/Racing.unity
+    guid: 3f4065ff7a719094ba6266441b843a2c
   m_configObjects: {}

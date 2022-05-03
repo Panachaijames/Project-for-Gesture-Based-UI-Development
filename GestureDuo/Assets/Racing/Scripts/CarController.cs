@@ -13,9 +13,13 @@ namespace Ambulance
 
         Vector3 position;
 
+        public UIManager ui;
+        public GameObject GOPanel;
+
         // Start is called before the first frame update
         void Start()
         {
+           // ui = GetComponent<UIManager>();
             position = transform.position;
         }
 
@@ -34,6 +38,9 @@ namespace Ambulance
             if(col.gameObject.tag == "EnemyCar")
             {
                 Destroy(gameObject);
+                ui.gameOverActivated();
+                GOPanel.SetActive(true);
+                Time.timeScale = 0;
             }
         }
     }
