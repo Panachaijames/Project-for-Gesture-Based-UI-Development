@@ -11,6 +11,7 @@ namespace Ambulance
         public Text scoreText;
         bool gameOver;
         int score;
+        public AudioManager audio;
 
         // Start is called before the first frame update
         void Start()
@@ -40,6 +41,7 @@ namespace Ambulance
             if (Time.timeScale == 1)
             {
                 Time.timeScale = 0;
+                audio.carSound.Stop();
             }
         }
 
@@ -48,6 +50,7 @@ namespace Ambulance
             if (Time.timeScale == 0)
             {
                 Time.timeScale = 1;
+                audio.carSound.Play();
             }
         }
 
