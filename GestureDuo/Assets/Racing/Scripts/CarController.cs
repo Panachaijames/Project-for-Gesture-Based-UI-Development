@@ -12,7 +12,8 @@ namespace Ambulance
         public float maxPos = 1.6f;
 
         Vector3 position;
-
+        float x1;
+        float x2;
         public UIManager ui;
         public GameObject GOPanel;
         public AudioManager audio;
@@ -51,6 +52,31 @@ namespace Ambulance
             if (currentPlatformAndroid == true)
             {
                 //android
+                for (int i = 0; i < Input.touchCount; i++)
+                {
+                    if(Input.GetTouch(i).phase == TouchPhase.Began)
+                    {
+                        x1 = Input.mousePosition.x;
+                    }
+                    else if (Input.GetTouch(i).phase == TouchPhase.Ended)
+                    {
+                        x2 = Input.mousePosition.x;
+                        Vector2 left = Vector2.left * 15f;
+                        Vector2 right = Vector2.right * 15f;
+                        if (x1>x2)
+                        {
+                            position.x += left.x * carSpeed * Time.deltaTime;
+                        }
+                        else
+                        {
+                            position.x += right.x * carSpeed * Time.deltaTime;
+                        }
+
+                        position.x = Mathf.Clamp(position.x, -1.6f, 1.6f);
+
+                        transform.position = position;
+                    }
+                }
             }
             else
             {
