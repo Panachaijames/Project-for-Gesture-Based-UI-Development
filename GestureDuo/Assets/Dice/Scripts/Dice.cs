@@ -23,7 +23,7 @@ namespace Dice
         private SpriteRenderer rend;
 
         public Score score;
-        // Use this for initialization
+
         private void Start()
         {
             
@@ -38,11 +38,6 @@ namespace Dice
             physicsController = GetComponent<PhysicsController>();
         }
 
-        // If you left click over the dice then RollTheDice coroutine is started
-        /* private void OnMouseDown()
-         {
-             StartCoroutine("RollTheDice");
-         }*/
 
         void Update()
         {
@@ -65,11 +60,11 @@ namespace Dice
             // It needs to be assigned. Let it be 0 initially
             int randomDiceSide = 0;
             int finalSide = 0;
+
             // Loop to switch dice sides ramdomly
             // before final side appears. 20 itterations here.
             for (int i = 0; i <= 20; i++)
             {
-                // Pick up random value from 0 to 5 (All inclusive)
                 randomDiceSide = Random.Range(0, 5);
 
                 // Set sprite to upper face of dice from array according to random value
@@ -79,11 +74,9 @@ namespace Dice
                 yield return new WaitForSeconds(0.05f);
             }
 
-            // Assigning final side so you can use this value later in your game
-            // for player movement for example
+            // Assigning final side 
             finalSide = randomDiceSide + 1;
             score.score1 = (float)finalSide;
-            // Show final dice value in Console
             Debug.Log(finalSide);
         }
     }
