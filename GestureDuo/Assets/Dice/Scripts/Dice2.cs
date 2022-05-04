@@ -6,7 +6,7 @@ using UnityEngine.UI;
 namespace Dice
 {
     [RequireComponent(typeof(PhysicsController))]
-    public class Dice : MonoBehaviour
+    public class Dice2 : MonoBehaviour
     {
         public float ShakeDetectionThreshold;
         public float MinShakeInterval;
@@ -23,6 +23,7 @@ namespace Dice
         private SpriteRenderer rend;
 
         public Score score;
+
         // Use this for initialization
         private void Start()
         {
@@ -38,12 +39,6 @@ namespace Dice
             physicsController = GetComponent<PhysicsController>();
         }
 
-        // If you left click over the dice then RollTheDice coroutine is started
-        /* private void OnMouseDown()
-         {
-             StartCoroutine("RollTheDice");
-         }*/
-
         void Update()
         {
             if (Input.acceleration.sqrMagnitude >= sqrShakeDetectionThreshold
@@ -53,18 +48,21 @@ namespace Dice
                 timeSinceLastShake = Time.unscaledTime;
 
                 StartCoroutine("RollTheDice");
-
-                SoundManager.Toss("toss");
             }
         }
-
+        // If you left click over the dice then RollTheDice coroutine is started
+        /* private void OnMouseDown()
+         {
+             StartCoroutine("RollTheDice");
+         }*/
         // Coroutine that rolls the dice
         private IEnumerator RollTheDice()
         {
             // Variable to contain random dice side number.
             // It needs to be assigned. Let it be 0 initially
             int randomDiceSide = 0;
-            int finalSide = 0;
+             // Final side or value that dice reads in the end of coroutine
+            int finalSide2 = 0;
             // Loop to switch dice sides ramdomly
             // before final side appears. 20 itterations here.
             for (int i = 0; i <= 20; i++)
@@ -81,10 +79,10 @@ namespace Dice
 
             // Assigning final side so you can use this value later in your game
             // for player movement for example
-            finalSide = randomDiceSide + 1;
-            score.score1 = (float)finalSide;
+            finalSide2 = randomDiceSide + 1;
+            score.score2 = (float)finalSide2;
             // Show final dice value in Console
-            Debug.Log(finalSide);
+            Debug.Log(finalSide2);
         }
     }
 }

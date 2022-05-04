@@ -39,5 +39,9 @@ namespace Menu
         {
             SceneManager.LoadScene("RacingMenu");
         }
+        public void PlayDice()
+        {
+            SceneManager.LoadScene("DiceMenu");
+        }
     }
 }
