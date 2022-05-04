@@ -41,4 +41,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Racing.unity
     guid: 3f4065ff7a719094ba6266441b843a2c
+  - enabled: 1
+    path: Assets/Scenes/DiceMenu.unity
+    guid: f64bced7879f1b143bdb5002a4eb471d
+  - enabled: 1
+    path: Assets/Scenes/Dice.unity
+    guid: 9a4aec704c10ae24f914bbae05da27d8
   m_configObjects: {}
