@@ -9,6 +9,7 @@ namespace FlappyBird
         private void OnTriggerEnter2D(Collider2D collision)
         {
             Score.score++;
+            SoundManager.PlaySound("point");
         }
     }
 }

@@ -24,12 +24,16 @@ namespace FlappyBird
                 Touch touch = Input.GetTouch(0);
                 //Jump
                 rb.velocity = Vector2.up * velocity;
+
+                SoundManager.PlaySound("wing");
             }
             
         }
 
         private void OnCollisionEnter2D(Collision2D collision)
         {
+            SoundManager.PlaySound("hit");
+            Destroy(gameObject);
             gameManager.GameOver();
         }
     }
