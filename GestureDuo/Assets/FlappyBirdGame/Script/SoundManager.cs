@@ -13,7 +13,7 @@ namespace FlappyBird
         // Start is called before the first frame update
         void Start()
         {
-            wingSound = Resources.Load<AudioClip>("wing");
+            wingSound = Resources.Load<AudioClip>("flap");
             hitSound = Resources.Load<AudioClip>("hit");
             pointSound = Resources.Load<AudioClip>("point");
 
@@ -24,7 +24,7 @@ namespace FlappyBird
         {
             switch (clip)
             {
-                case "wing":
+                case "flap":
                     audioSrc.PlayOneShot(wingSound);
                     break;
                 case "hit":

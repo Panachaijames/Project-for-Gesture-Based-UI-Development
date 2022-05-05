@@ -25,7 +25,7 @@ namespace FlappyBird
                 //Jump
                 rb.velocity = Vector2.up * velocity;
 
-                SoundManager.PlaySound("wing");
+                //SoundManager.PlaySound("flap");
             }
             
         }
