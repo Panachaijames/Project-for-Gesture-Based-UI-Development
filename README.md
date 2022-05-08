@@ -1,7 +1,7 @@
 # Project-for-Gesture-Based-UI-Development
 <br />
 
-| Project Title | Project Survive -  Arcade game create by Unity |
+| Project Title | Project Arcade -  Arcade game create by Unity |
 | ------------- | ------------- |
 | Course  | BSc (Hons) in Software Development  |
 | Module | Gesture Based User Interface Development  |
